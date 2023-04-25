@@ -5,7 +5,7 @@ export const getErrorMessages = (errs: ValidationError[]): Errors => {
 	const message: Errors = {};
 
 	for (const e of errs) {
-		message[e.param] = e.msg;
+		if (e.type === 'field') message[e.path] = e.msg;
 	}
 	return message;
 };

@@ -1,0 +1,25 @@
+.form {
+  display: grid;
+  grid-auto-rows: min-content;
+  padding: 10px;
+  row-gap: 10px;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+}
+
+.form .button {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  margin-left: auto;
+  gap: 4px;
+}
+
+.form .button:hover {
+  background: #63d187;
+}

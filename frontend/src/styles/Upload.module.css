@@ -1,0 +1,59 @@
+.upload {
+  grid-column: 1 / span 8;
+  width: 100%;
+  height: min-content;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px #333333;
+}
+
+.upload form {
+  display: grid;
+  grid-auto-rows: min-content;
+  padding: 20px;
+  background: #ffffff;
+  gap: 12px;
+}
+
+.upload input, .upload textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+}
+
+.upload input[type='file'] {
+  display: none;
+}
+
+.upload label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 360px;
+  margin: auto;
+  outline: 1px solid #bbbbbb;
+  border-radius: 4px;
+  background-image: url('/objetive.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.upload .button {
+  margin-left: auto;
+  padding: 8px 24px;
+  font-weight: 700;
+  gap: 5px;
+}
+
+.upload .button:hover {
+  background: #63d187;
+}
+
+@media (max-width: 1040px) {
+  .upload {
+    grid-column: 1 / span 12;
+  }
+}

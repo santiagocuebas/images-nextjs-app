@@ -1,0 +1,26 @@
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: min-content;
+  padding: 20px;
+  outline: 1px solid #999999;
+  border-radius: 4px;
+  background-color: #ffffff;
+  gap: 10px;
+}
+
+.stats h2 {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  gap: 6px;
+}
+
+.stats p {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: min-content;
+  gap: 6px;
+}

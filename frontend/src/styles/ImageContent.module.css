@@ -1,0 +1,64 @@
+.image {
+  display: grid;
+  grid-auto-rows: min-content;
+  width: 50%;
+  min-width: 500px;
+  max-width: 800px;
+  height: min-content;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px #777777;
+  row-gap: 20px;
+}
+
+.image h2 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #5383d3;
+  font-size: 32px;
+  color: #ffffff;
+  gap: 5px;
+}
+
+.image button {
+  position: absolute;
+  right: 20px;
+  padding: 8px 24px;
+  background-color: #e23434;
+  font-size: 20px;
+  font-weight: 700;
+  gap: 5px;
+}
+
+.image button:hover {
+  background-color: #f23434;
+}
+
+.image img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.image .description {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.image .stats {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 20px;
+  background-color: #5383d3;
+  color: #ffffff;
+}
+
+.image .stats p {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

@@ -2,7 +2,7 @@ import { Result, ValidationError, validationResult } from 'express-validator';
 import fs from 'fs-extra';
 import { Md5 } from 'ts-md5';
 import { Direction, Errors } from '../types.js';
-import { getErrorMessages } from '../libs/errorMessage.js';
+import { getErrorMessages } from '../libs/error-message.js';
 import { ImageModel } from '../models/Image.js';
 import { CommentModel } from '../models/Comment.js';
 
@@ -65,7 +65,7 @@ export const deleteImage: Direction = async (req, res) => {
 
 	if (image !== null) {
 		// Unlink file and delete image and comment
-		await fs.unlink(`./uploads/${image.filename}`);
+		await fs.unlink(`uploads/${image.filename}`);
 		await CommentModel.deleteMany({ imageId: image._id });
 		await image.deleteOne();
 

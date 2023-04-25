@@ -1,5 +1,5 @@
 import { Schema } from 'express-validator';
-import { imageValidator } from './customValidators.js';
+import { imageValidator } from './custom-validators.js';
 
 export const schemaUploads: Schema = {
 	title: {

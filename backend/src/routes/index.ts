@@ -1,10 +1,7 @@
 import { Router } from 'express';
 import { checkSchema } from 'express-validator';
 import { imageCtrl, homeCtrl } from '../controllers/index.js';
-import {
-	schemaUploads,
-	schemaComment
-} from '../validators/schemasValidators.js';
+import { schemaUploads, schemaComment } from '../validators/schemas-validators.js';
 
 const router = Router();
 

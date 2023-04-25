@@ -2,8 +2,8 @@ import { Result, ValidationError, validationResult } from 'express-validator';
 import fs from 'fs-extra';
 import { extname, resolve } from 'path';
 import { Direction, Errors } from '../types.js';
-import { randomFilename } from '../libs/randomFilename.js';
-import { getErrorMessages } from '../libs/errorMessage.js';
+import { randomFilename } from '../libs/random-filename.js';
+import { getErrorMessages } from '../libs/error-message.js';
 import { ImageModel } from '../models/Image.js';
 import { getSidebar } from '../sidebar/index.js';
 

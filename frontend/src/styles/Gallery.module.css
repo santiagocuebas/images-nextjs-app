@@ -1,0 +1,29 @@
+.gallery {
+  width: 90%;
+  max-width: 1530px;
+  min-width: 530px;
+  min-height: 830px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px #333333;
+}
+
+.gallery h2 {
+  display: flex;
+  align-items: center;
+  padding: 13px;
+  background-color: #5383d3;
+  font-size: 21px;
+  color: #ffffff;
+  gap: 7px;
+}
+
+.gallery div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  grid-auto-rows: min-content;
+  justify-content: center;
+  width: 100%;
+  min-height: min-content;
+  padding: 20px;
+  gap: 10px;
+}

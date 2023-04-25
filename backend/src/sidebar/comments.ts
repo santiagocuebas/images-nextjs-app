@@ -4,5 +4,6 @@ export const getComments = async () => {
 	return await CommentModel
 		.find()
 		.sort({ createdAt: -1 })
-		.limit(5);
+		.limit(5)
+		.lean();
 };

@@ -1,0 +1,11 @@
+.main {
+  display: grid;
+  grid-auto-rows: min-content;
+  justify-items: center;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  margin-top: 60px;
+  padding: 20px 0;
+  background-color: #f0f4f8;
+  row-gap: 20px;
+}
