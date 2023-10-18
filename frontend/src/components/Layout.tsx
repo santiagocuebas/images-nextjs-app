@@ -24,12 +24,12 @@ export default function Layout({ children }: ChildProp) {
 				{
 					router.asPath !== '/gallery'
 						? <Button text='Gallery' color='green' href='/gallery' />
-						: null
+						: <></>
 				}
 				{
 					router.asPath !== '/'
 						? <Button text='Upload' color='violet' href='/' />
-						: null
+						: <></>
 				}
 			</Nav>
 			<div className={styles.main} onWheel={showFooter}>

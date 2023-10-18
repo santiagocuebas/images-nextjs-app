@@ -1,8 +1,9 @@
 import styles from '@/styles/Nav.module.css';
 import Link from "next/link";
 import Image from "next/image";
+import type { ChildProp } from '@/lib/props';
 
-export default function Nav({ children }: any) {
+export default function Nav({ children }: ChildProp) {
   return (
     <nav className={styles.nav}>
       <Link href={'/'} className={styles.link}>
