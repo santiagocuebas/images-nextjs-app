@@ -27,4 +27,4 @@ npm start
 - Express
 - MongoDB
 - Typescript
-- SvelteKit
+- Nextjs
